@@ -1,4 +1,4 @@
-package com.udacity.bootstrap;
+package com.example.DogRestApi;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class BootstrapApplicationTests {
+public class DogApplicationTests {
 
 	@Test
 	public void contextLoads() {

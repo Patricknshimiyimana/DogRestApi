@@ -18,9 +18,10 @@ public class Dog {
         this.origin = origin;
     }
 
-    public Dog(String name, String breed) {
+    public Dog(String name, String breed, String origin) {
         this.name = name;
         this.breed = breed;
+        this.origin = origin;
     }
 
     public Dog() {

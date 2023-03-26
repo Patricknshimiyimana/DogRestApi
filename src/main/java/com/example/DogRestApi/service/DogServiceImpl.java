@@ -44,4 +44,9 @@ public class DogServiceImpl implements DogService {
     public Dog addDog(Dog dog) {
         return dogRepository.save(dog);
     }
+
+    public Optional<Dog> getDogById(Long id) {
+        Optional<Dog> dog = dogRepository.findById(id);
+        return dog;
+    }
 }

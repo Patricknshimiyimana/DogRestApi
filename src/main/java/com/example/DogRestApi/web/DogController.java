@@ -1,6 +1,7 @@
 package com.example.DogRestApi.web;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -53,6 +54,12 @@ public class DogController {
     public ResponseEntity<Dog> addDog(@RequestBody Dog dog) {
         Dog newDog = dogService.addDog(dog);
         return new ResponseEntity<Dog>(newDog, HttpStatus.CREATED);
+    }
+
+    @GetMapping("/dogs/{id}")
+    public ResponseEntity<Optional<Dog>> getDogById(@PathVariable Long id) {
+        Optional<Dog> dog = dogService.getDogById(id);
+        return new ResponseEntity<Optional<Dog>>(dog, HttpStatus.OK);
     }
 
 }

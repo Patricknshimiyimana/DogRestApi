@@ -1,6 +1,8 @@
 package com.example.DogRestApi.service;
 
 import java.util.List;
+import java.util.Optional;
+
 import com.example.DogRestApi.entity.Dog;
 
 public interface DogService {
@@ -13,4 +15,6 @@ public interface DogService {
     // Dog addDog(String name, String breed, String origin);
 
     Dog addDog(Dog dog);
+
+    Optional<Dog> getDogById(Long id);
 }

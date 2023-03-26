@@ -17,4 +17,10 @@ public interface DogService {
     Dog addDog(Dog dog);
 
     Optional<Dog> getDogById(Long id);
+
+    List<String> retrieveDogBreed();
+
+    String retrieveDogBreedById(Long id);
+
+    List<String> retrieveDogNames();
 }
